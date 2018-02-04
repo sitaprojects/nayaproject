@@ -1,0 +1,28 @@
+
+#catlist{
+    border:1px dashed #ccc;
+    border-bottom:none;
+	width: 100%;
+	margin:10px auto;
+	overflow-y: scroll;
+	height: 400px;
+}
+#catlist dl{
+	width: 100%;
+	margin:0 auto;
+	border-bottom:1px dashed #ccc;
+	padding:10px;
+	overflow: none;
+	background:#f2f2f2;
+}
+#catlist dd{overflow:auto}
+#catlist dt strong{
+	float:right;
+	padding:0 0 0 20px;
+}
+#catlist dt img{
+	float:left;
+	margin:0 10px 0 0;
+	border:1px solid #000;
+}
+* html dd{height:1%}/* 3px jog*/

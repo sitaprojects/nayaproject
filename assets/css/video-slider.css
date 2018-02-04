@@ -1,0 +1,55 @@
+.google-ko-slider-kocontent-box{
+	width: 90%;
+	margin: 0 5%;
+}
+.google-owl-nav{
+	display: block;
+    margin-bottom: 10px;
+    background-color: #337ab7;
+    position: relative;
+}
+.google-owl-nav > h2{
+    line-height: 15px;
+    font-size: 19px;
+    padding: 10px 15px;
+    display: inline-block;
+    float: left;
+    position: absolute;
+    margin: 0;
+    font-weight: 600;
+    left: 0;
+    color: #fff;
+}
+
+.customNextBtn,
+.customPrevBtn{
+	float: right;
+	padding: 2px 8px;
+}
+.clear{
+	clear: right;
+}
+.caption > p{
+	font-size: 15px;
+    font-weight: bold;
+	color: #2b5e97;
+	margin-top: 10px;
+}
+.thumbnail > a{
+	text-decoration: none;
+}
+.caption > p:hover{
+	color: #F00;
+	transition-duration: 0.8s;
+}
+.image-container-area{
+	position: relative;
+	text-align: center;
+	background-color: #FFF;
+}
+.google-image-text-centered{
+   position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}

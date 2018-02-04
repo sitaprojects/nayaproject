@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>business</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<style>
+		
+
+
+img.ads {
+	width: 100%;
+	margin-top: 20px;
+	line-height: 10px;
+}
+
+.main-list img {
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.main-list h4 {
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 1.3;
+	color: #337ab7;
+}
+
+.samachar-list {
+	border-bottom: 1px dashed #ccc;
+}
+.samachar-list:last-child {
+	border-bottom: none;
+}
+
+.samachar-list h5 {
+	font-size: 1.1em;
+	line-height: 1.4;
+	font-weight: bold;
+	color: #337ab7;
+}
+
+.content-writting-front {
+	font-size: 15px;
+}
+
+.main-list h5 i {
+	color: #ed1f24;
+}
+
+.cat-title {
+	padding: 10px;
+	background: #2f3d5d;
+	color: #fff;
+	border: solid #2f3d5d 1px;
+}
+
+.cat-title a {
+	background: url(images/flag.png) #2f3d5d no-repeat;
+	padding: 7.6px;
+	margin-left: -10px;
+	color: #fff;
+	font-size: 20px;
+	padding-left: 80px;
+	padding-right: 50px;
+}
+
+/*.samachar-list:hover {
+	color: #01944d;
+	-webkit-transition: 1s;
+	transition: 1s;
+}*/
+
+/*.main-list h4:hover {
+	color: #01944d;
+	-webkit-transition: 1s;
+	transition: 1s;
+}*/
+
+.main-list>a, .samachar-list>a:hover {
+	text-decoration: none !important;
+}
+
+/*.samachar-list h5:hover {
+	transition-duration: 1s;
+	color: #01944d;
+}*/
+
+
+
+
+
+	.sub-menu {
+    position: absolute;
+    top: 31px;
+    left: -23px;
+    padding-left: 0px;
+    z-index: 100;
+    display: none;
+    
+}
+.sub-menu li{
+	list-style: none;
+    border-bottom: 1px solid #FFF;
+    background-color: #e62128;
+    opacity: 0.9;
+}
+.sub-menu li a {
+    padding: 7px 15px;
+    width: 140px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    display: block;
+}
+.sub-menu li:last-child{
+    border: none !important;
+    }
+.sub-menu>li.current-menu-item>a{
+    background: #FFF;
+    color: #e62128;
+}
+
+.sub-menu li :hover{
+    color: #fff;
+   }   
+.menu-item-has-children:hover > .sub-menu {
+	display: block;
+}
+
+
+
+
+
+		.whole {
+margin-top: 25px;
+}
+/* .heading h4 a{
+color: #337ab7;
+} */
+.samachar-margin{
+	margin-top: 10px;
+}
+.heading a:hover{
+text-decoration: none;
+/*color: #ff3e44;
+transition-duration: 1s;*/
+}
+.heading h4{
+}
+.heading h4 a{
+    color: #2b5e97;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: bold;
+}
+.heading img{
+width: 100%;
+height: 200px;
+}
+@media(max-width: 1200px){
+.heading h4 a{
+font-size: 16px;
+}
+}
+
+
+/*Nav*/
+/*#front-page-top-margin{
+    margin-top: 175px;
+}
+@media(max-width: 1024px){
+    #front-page-top-margin{
+        margin-top: 200px;
+    }
+}
+@media(max-width: 768px){
+    #front-page-top-margin{
+        margin-top: 220px;
+    }
+}
+@media(max-width: 512px){
+    #front-page-top-margin{
+        margin-top: 237px;
+    }
+}*/
+.header-top {
+    background-color: #f1f1f1;
+    padding: 6px 0 8px 0;
+}
+.top-menu {
+    padding: 0 15px;
+    float: left;
+}
+.tweet-like {
+    display: inline-block;
+    margin-right: 10px;
+    float: right;
+}
+.header .btn-info {
+    float: right;
+    margin-right: 10px;
+}
+.btn-info {
+    font-size: 11px;
+}
+.logo a {
+    margin: 11px 11px;
+}
+.navigation {
+    border: none;
+    border-radius: 0;
+}
+
+.navigation {
+    margin-top: 15px;
+}
+.navbar-default {
+	position: none;
+    border: none;
+    border-radius: 0;
+    background: #e62128;
+}
+.navbar {
+    /* position: relative; */
+    margin-bottom: 0!important;
+    border: 1px solid transparent;
+    min-height: 31px;
+}
+.navbar-default .navbar-toggle {
+    border-color: #84754E;
+}
+.navbar-toggle {
+    position: relative;
+    float: right;
+    margin-right: 0;
+    padding: 9px 10px;
+    margin-top: 0px;
+    margin-bottom: 8px;
+    background-color: #F9F9F9!important;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #84754E;
+}
+.nav-justified > li {
+    border-right: 1px solid #fff;
+}
+.nav > li > a {
+    padding: 5px 0;
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 700;
+}
+.nav-justified > li:last-child {
+    border-right: none;
+}
+.nav > li > a:hover {
+    background: #fff;
+    color: #337ab7;
+
+}
+.harpal-sub-menu{
+    margin-top: -15px;
+}
+
+.archive-menu li a{
+   color: #337ab7 !important;
+}
+.archive-menu{
+    background: #e8f8ff !important;
+}
+li.current-menu-item>a{
+    background: #FFF;
+    color: #337ab7;
+}
+
+
+
+
+.big-news{
+	background: transparent;
+	padding-top: 0px;
+	padding-bottom: 0px;}
+.big-news h2 {
+        font-size: 30px;
+    line-height: 1.3;
+    border-left: 8px solid #01944d;
+    color: #337ab7;
+    font-weight: bold;
+}
+.big-news a:hover{
+	text-decoration: none;
+}
+/*.big-news h2:hover{
+	color: #01944d;
+				-webkit-transition: 1s;
+				transition: 1s;
+}*/
+.big-news img{
+	max-width: 80%;
+}
+.home-post-meta span {
+    background: #ed1f24;
+    padding: 5px;
+    border: solid 1px;
+    box-shadow: 0px 2px 2px #ddd;
+	color: #fff;
+}
+@media(max-width: 768px) {
+	
+.big-news img{
+	max-width: 100%;
+	height: auto;
+}
+}	
+
+
+
+
+.this-content{
+	width: 90%;
+	padding:10px;
+	margin: 10px auto;
+	background-color: #f8f8f8;
+}
+.main-content{
+	padding-left: 15px;
+}
+.single-page-top-header h2{
+	font-size: 30px;
+    line-height: 1.2em;
+    padding-top: 15px;
+    color: #1a74bb;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+/*.single-page-top-header h2:hover{
+	color: #01944d;
+	transition-duration: 0.8s; 
+}*/
+.single-page-top-header{
+	font-weight: bold;
+	font-size: 15px;
+}
+.single-page-top-header span{
+	border-right: 1px solid #ccc;
+	padding: 7px 12px;
+	border-bottom: 1px solid #ccc;
+}
+.social-app ul li{
+	list-style: none;
+	float: left;
+}
+.caption a{
+	text-decoration: none;
+}
+.caption a p{
+	font-weight: bold;
+	font-size: 15px;
+}
+/*.caption a p:hover{
+	color: #ff3e44;
+	transition-duration: 0.8s;
+}*/
+.single-artical-cover p{
+	margin-top: 15px;
+}
+.single-page-down-header h4{
+    text-transform: uppercase;
+    color: #1a74bb;
+    font-size: 25px;
+    line-height: 18px;
+    float: left;
+    width: 100%;
+    font-weight: bold;
+    border-bottom: 1px solid #1a74bb;
+}
+.single-page-down-header h4 span{
+	float: left;
+    border-bottom: 3px solid #1a74bb;
+    padding: 0 0 15px 0;
+    margin: 0 0 -1px 0;
+}
+/*.harpal-archive h2 a:hover{
+	color: #01944d;
+	transition-duration: 0.8s;
+}*/
+
+
+
+
+
+
+
+
+/*alok css*/
+
+
+
+.container{
+	width: 80%;
+	margin:0 auto;
+}			
+.harpal-archive h2{
+	font-size: 22px;
+    font-weight: 700;
+    line-height: 1.3em;
+    padding: 0px 0;
+}
+.harpal-archive .entry-meta {
+    margin-bottom: 10px;
+}
+.col-md-8 .harpal-archive img {
+    margin-right: 15px;
+    margin-bottom: 15px;
+    width: 20%;
+}
+    p{
+    	margin: 0;
+    font-family: "Ek Mukta", sans-serif;
+    font-size: 15px;
+    }
+.harpal-archive-listing h3{
+	font-weight: 700;
+	font-size: 18px;
+    padding-bottom: 10px;
+}
+.harpal-archive-list-right {
+    height: 62px;
+    overflow: hidden;
+}
+.harpal-archive-list-left a img {
+    width: 84px;
+    margin-right: 5px;
+}
+p.short_content {
+        line-height: 19px;
+    padding-top: 6px;
+    font-size: 15px;
+}
+a:hover{
+	text-decoration: none;
+}
+/*.harpal-archive-listing h3 a:hover{
+	color: #01944d;
+	transition-duration: 0.8s;
+}*/
+.harpal-sidebar-heading h4{
+	border-bottom: 3px solid #01944d;
+	padding: 10px 0;
+	font-weight: bold;
+	font-size: 18px;
+}
+@media(max-width: 768px){
+
+.col-md-8 .harpal-archive img {
+    width: 100%;
+}
+}
+
+
+		.pm-khabar-business-navbar{
+margin-right: 12px;
+}
+.pm-khabar-business{
+float: left;
+}
+.pm-khabar-business h4{
+font-size: 18px;
+    font-weight: bold;
+    line-height: 1.3;
+    color: #337ab7;
+}
+
+/*.pm-khabar-business h4 a:hover{
+    color: #01944d;
+}*/
+.pm-khabar-business-nav-menu{
+margin-top: 9px;
+}
+.pm-khabar-business-nav-menu li{
+float: left;
+list-style-type: none;
+/*background-color: #ccc;*/
+    padding: 0px 4px;
+    margin-right: 10px;
+}
+.pm-khabar-business-nav-menu li a{
+text-decoration: none;
+font-size: 15px;
+    font-weight: bold;
+}
+.pm-khabar-business-nav-menu li a:hover{
+color: #01944d;
+}
+.pm-ko-side-border{
+margin-top: 10px;
+}
+.pm-ko-side-border ul{
+font-size: 17px;
+list-style-type: none;
+padding: 10px 0 10px 5px;
+background: #fff;
+line-height: 30px;
+}
+.pm-ko-side-border a{
+box-sizing: border-box;
+border-radius: 0 !important;
+}
+.pm-ko-side-border ul li{
+    border-bottom: 1px solid #dddddd;
+    padding: 5px 2px 5px 2px;
+    line-height: 1.4em;
+    font-size: 15px;
+}
+.business-home-top h3 a{
+line-height: 1.4em;
+font-weight: bold;
+}
+.business-img img{
+width: 100%;
+height: auto;
+margin:8px 12px 2px 0;
+}
+.clear{
+clear: both;
+}
+	</style>
+</head>
+<body>
+	<div class="container">
+	<div class="harpal-sub-menu hidden-xs">
+		<div class="navigation">
+			<nav class="navbar navbar-default archive-menu">
+				
+				<div class="col-md-12">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+					</div>
+					<div id="navbar" class="navbar-collapse collapse">
+						<ul id="menu-main-menu harpal-sub-list" class="nav nav-justified">
+							<li><a href="http://www.pmkhabar.com/business_category/business-talk"> अर्थ–वार्ता </a></li>
+							<li><a href="http://www.pmkhabar.com/business_category/tourism"> पर्यटन </a></li>
+							<li><a href="http://www.pmkhabar.com/business_category/profile"> प्रोफाइल </a></li>
+							<li><a href="http://www.pmkhabar.com/business_category/market"> बजार </a></li>
+							<li><a href="http://www.pmkhabar.com/business_category/banking-2"> बैँक/बित्त </a></li>
+							<li><a href="http://www.pmkhabar.com/business_category/business-news"> समाचार </a></li>
+							<li><a href="http://www.pmkhabar.com/business_category/housing"> हाउजिङ </a></li>
+						</ul>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</nav>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	
+<style type="text/css">
+		.harpal-heading-header{
+    display: block;
+    height: 35px;
+    background-color: #E9E9E9;
+}
+
+.harpal-heading-header h3{
+    background: #01944d!important;
+    line-height: 35px;
+    padding: 0 15px;
+    display: block;
+    float: left;
+    color: #FFF;
+    margin: 0;
+    font-size: 15px;
+    font-weight: bold;
+}
+</style>
+<div class="clearfix"></div>
+<section>
+	<div class="this-content">
+																						<div class="big-news text-center">
+									<a href="http://www.pmkhabar.com/business/%e0%a4%af%e0%a4%b8%e0%a4%b0%e0%a5%80-%e0%a4%95%e0%a4%b0-%e0%a4%9b%e0%a4%b2%e0%a5%80-%e0%a4%97%e0%a4%b0%e0%a5%8d%e0%a4%9b-%e0%a4%ac%e0%a5%88%e0%a4%b6%e0%a4%be%e0%a4%b2%e0%a5%80-%e0%a4%b9%e0%a5%8b">
+										<h2>यसरी कर छली गर्छ, बैशाली होटल</h2>
+									<img width="320" height="180" src="http://www.pmkhabar.com/wp-content/uploads/2017/09/morang_20100610082625-320x180-1.jpg" class="attachment-full size-full wp-post-image" alt="" srcset="http://www.pmkhabar.com/wp-content/uploads/2017/09/morang_20100610082625-320x180-1.jpg 320w, http://www.pmkhabar.com/wp-content/uploads/2017/09/morang_20100610082625-320x180-1-300x169.jpg 300w" sizes="(max-width: 767px) 89vw, (max-width: 1000px) 54vw, (max-width: 1071px) 543px, 580px" />    </a>
+								</div>
+
+																		</div>
+	<div class="clearfix"></div>
+</section>
+<div class="clearfix"></div>
+	<section style="margin-top: 20px;">
+		<div class="this-content">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="row">
+				<div class="col-md-4">
+																					<div class="pm-khabar-business">
+						<h4><a href="http://www.pmkhabar.com/business/%e0%a4%9a%e0%a4%be%e0%a4%b0-%e0%a4%a0%e0%a4%be%e0%a4%89%e0%a4%81%e0%a4%ae%e0%a4%be-%e0%a4%94%e0%a4%a6%e0%a5%8d%e0%a4%af%e0%a5%8b%e0%a4%97%e0%a4%bf%e0%a4%95-%e0%a4%95%e0%a4%b0%e0%a4%bf%e0%a4%a1">चार ठाउँमा औद्योगिक करिडोर स्थापना गर्न अध्ययन समिति गठन</a></h4>
+					</div>
+					<div class="business-img">
+						<img src="http://www.pmkhabar.com/wp-content/uploads/2017/09/morang_20100610082625-320x180.jpg">
+					</div>
+					<p style="font-size: 15px;">काठमाडौं, पुस १३ – उद्योग मन्त्रालयले औद्योगिक करिडोर स्थापनाका लागि सुनसरी–मोरङ्ग, विरगञ्ज–सिमरा, भैरहवा–बुटवल र नेपालगञ्ज–कोहलपुरको अध्ययन गर्न समिति गठन गरेको छ । उद्योगमन्त्रालयका प्रवक्ता यमकुमारी खतिवडाले दुई महिना भित्र समग्र भौतिक पूर्वाधारको अध्ययन प्रतिवेदन पेश गर्ने गरी तीन सदस्य समिति गठन भएको जानकारी दिए ।...</p>
+																					</div>
+								<div class="col-md-4 col-sm-6">
+
+
+
+								
+																							<div class="main-list small-list clearfix">
+										<a href="http://www.pmkhabar.com/business/%e0%a4%85%e0%a4%b0%e0%a5%81%e0%a4%a3-%e0%a4%a4%e0%a5%87%e0%a4%b8%e0%a5%8d%e0%a4%b0%e0%a5%8b%e0%a4%ac%e0%a4%be%e0%a4%9f-%e0%a4%ad%e0%a5%8b%e0%a4%9c%e0%a4%aa%e0%a5%81%e0%a4%b0%e0%a4%b2%e0%a4%be%e0%a4%88">
+											<h4>अरुण तेस्रोबाट भोजपुरलाई पनि राहत मिल्ने</h4>
+										<img width="80" height="80" src="http://www.pmkhabar.com/wp-content/uploads/2017/09/radhesh-panta-4-320x180.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" srcset="http://www.pmkhabar.com/wp-content/uploads/2017/09/radhesh-panta-4-320x180.jpg" sizes="(max-width: 150px) 100vw, 150px">    </a>
+										<span class="content-writting-front">
+											<span class="content-writting-front">भोजपुर, पुस ११– भोजपुरको सिमानामा पर्ने अरुण तेस्रो आयोजनाबाट प्रभावित भोजपुरको उत्तरी षडानन्द नगरपालीका सहित १० भन्दा बढी गाविसको स्थानीयबासीलाई राहात दिन लगानी बोर्ड सकारात्मक...</span>
+										</span>
+									</div>
+																	<div class="main-list small-list clearfix">
+										<a href="http://www.pmkhabar.com/business/%e0%a4%b8%e0%a5%8d%e0%a4%b5%e0%a4%a6%e0%a5%87%e0%a4%b6%e0%a5%80-%e0%a4%b5%e0%a4%b8%e0%a5%8d%e0%a4%a4%e0%a5%81-%e0%a4%89%e0%a4%aa%e0%a4%af%e0%a5%8b%e0%a4%97-%e0%a4%b8%e0%a4%ae%e0%a5%8d%e0%a4%ac">
+											<h4>स्वदेशी वस्तु उपयोग सम्बन्धि निर्देशिका अन्तिम चरणमा</h4>
+										<img width="80" height="80" src="http://www.pmkhabar.com/wp-content/uploads/2017/09/mela-320x180.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" srcset="http://www.pmkhabar.com/wp-content/uploads/2017/09/mela-320x180.jpg" sizes="(max-width: 150px) 100vw, 150px">    </a>
+										<span class="content-writting-front">
+											<span class="content-writting-front">नेपाल छाला जुत्ता तथा बस्तु उत्पादक संघले बुधबारदेखि राजधानीको भृकुटी मण्डममा सुरु गरेको ११ औं छाला वस्तु तथा जुत्ता चप्पल सम्बन्धी प्रदर्शनीको उद्घाटन सत्रमा बोल्दै...</span>
+										</span>
+									</div>
+																	
+
+																									<div class="samachar-list clearfix">
+										<a href="http://www.pmkhabar.com/business/%e0%a4%b0%e0%a5%87%e0%a4%b6%e0%a4%ae-%e0%a4%ae%e0%a4%be%e0%a4%b0%e0%a5%8d%e0%a4%97%e0%a4%95%e0%a5%8b-%e0%a4%aa%e0%a5%81%e0%a4%a8%e0%a4%b0%e0%a5%8d%e0%a4%95%e0%a4%b2%e0%a5%8d%e0%a4%aa%e0%a4%a8%e0%a4%be">
+											<h5><i class="fa fa-arrow-circle-o-right " aria-hidden="true"></i> रेशम मार्गको पुनर्कल्पनामा नेपाल</h5>
+										</a>
+									</div>
+																		<div class="samachar-list clearfix">
+										<a href="http://www.pmkhabar.com/business/%e0%a4%b9%e0%a4%bf%e0%a4%b0%e0%a5%8b%e0%a4%ae%e0%a5%8b%e0%a4%9f%e0%a5%8b%e0%a4%95%e0%a4%b0%e0%a5%8d%e0%a4%aa-%e0%a4%b2%e0%a4%bf%e0%a4%ae%e0%a4%bf%e0%a4%9f%e0%a5%87%e0%a4%a1%e0%a4%95%e0%a4%be%e0%a5%87">
+											<h5><i class="fa fa-arrow-circle-o-right " aria-hidden="true"></i> हिरोमोटोकर्प लिमिटेडकाे नयाँ स्कूटर बजारमा</h5>
+										</a>
+									</div>
+																		<div class="samachar-list clearfix">
+										<a href="http://www.pmkhabar.com/business/%e0%a4%b8%e0%a4%b8%e0%a5%8d%e0%a4%a4%e0%a4%be%e0%a5%87-%e0%a4%b0-%e0%a4%b8%e0%a5%81%e0%a4%b2%e0%a4%ad-%e0%a4%b8%e0%a4%ae%e0%a5%8d%e0%a4%b0%e0%a4%be%e0%a4%9f-%e0%a4%aa%e0%a4%be%e0%a4%9f%e0%a5%80">
+											<h5><i class="fa fa-arrow-circle-o-right " aria-hidden="true"></i> सस्ताे र सुलभ सम्राट पाटी प्यालेस(फाेटाे सहित)</h5>
+										</a>
+									</div>
+																	
+									
+									
+								</div>
+								<div class="col-md-4 col-sm-6">
+
+																		
+									<div class="ads">
+										<img src="http://www.pmkhabar.com/wp-content/uploads/2017/09/electricity.gif" class="ads">
+									</div>
+
+																								
+									<div class="ads">
+										<img src="http://www.pmkhabar.com/wp-content/uploads/2017/09/nepal-telecom-may17.gif" class="ads">
+									</div>
+
+																	</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section style="margin-top: 20px;">
+		<div class="this-content">
+		<div class="harpal-heading-header">
+				<h3>बैँक/बित्त</h3>
+			</div>
+			<div class="row samachar-margin">
+																<div class="col-md-3 heading">
+								<!-- 	<h4><a href="#">आजदेखि सोह्रश्राद्ध सुरु</a></h4> -->
+								<img src="http://www.pmkhabar.com/wp-content/uploads/2017/09/morang_20100610082625-320x180-1.jpg">
+								<h4><a href="http://www.pmkhabar.com/business/%e0%a4%af%e0%a4%b8%e0%a4%b0%e0%a5%80-%e0%a4%95%e0%a4%b0-%e0%a4%9b%e0%a4%b2%e0%a5%80-%e0%a4%97%e0%a4%b0%e0%a5%8d%e0%a4%9b-%e0%a4%ac%e0%a5%88%e0%a4%b6%e0%a4%be%e0%a4%b2%e0%a5%80-%e0%a4%b9%e0%a5%8b">यसरी कर छली गर्छ, बैशाली होटल </a> </h4>
+							</div>
+																	<div class="col-md-3 heading">
+								<!-- 	<h4><a href="#">आजदेखि सोह्रश्राद्ध सुरु</a></h4> -->
+								<img src="http://www.pmkhabar.com/wp-content/uploads/2017/09/morang_20100610082625-320x180.jpg">
+								<h4><a href="http://www.pmkhabar.com/business/%e0%a4%9a%e0%a4%be%e0%a4%b0-%e0%a4%a0%e0%a4%be%e0%a4%89%e0%a4%81%e0%a4%ae%e0%a4%be-%e0%a4%94%e0%a4%a6%e0%a5%8d%e0%a4%af%e0%a5%8b%e0%a4%97%e0%a4%bf%e0%a4%95-%e0%a4%95%e0%a4%b0%e0%a4%bf%e0%a4%a1">चार ठाउँमा औद्योगिक करिडोर स्थापना गर्न अध्ययन समिति गठन </a> </h4>
+							</div>
+																	<div class="col-md-3 heading">
+								<!-- 	<h4><a href="#">आजदेखि सोह्रश्राद्ध सुरु</a></h4> -->
+								<img src="http://www.pmkhabar.com/wp-content/uploads/2017/09/mela-320x180.jpg">
+								<h4><a href="http://www.pmkhabar.com/business/%e0%a4%b8%e0%a5%8d%e0%a4%b5%e0%a4%a6%e0%a5%87%e0%a4%b6%e0%a5%80-%e0%a4%b5%e0%a4%b8%e0%a5%8d%e0%a4%a4%e0%a5%81-%e0%a4%89%e0%a4%aa%e0%a4%af%e0%a5%8b%e0%a4%97-%e0%a4%b8%e0%a4%ae%e0%a5%8d%e0%a4%ac">स्वदेशी वस्तु उपयोग सम्बन्धि निर्देशिका अन्तिम चरणमा </a> </h4>
+							</div>
+																	<div class="col-md-3 heading">
+								<!-- 	<h4><a href="#">आजदेखि सोह्रश्राद्ध सुरु</a></h4> -->
+								<img src="http://www.pmkhabar.com/wp-content/uploads/2017/09/17883787_1448545085197461_9138448103925318985_n-320x180.jpg">
+								<h4><a href="http://www.pmkhabar.com/business/%e0%a4%b8%e0%a4%b8%e0%a5%8d%e0%a4%a4%e0%a4%be%e0%a5%87-%e0%a4%b0-%e0%a4%b8%e0%a5%81%e0%a4%b2%e0%a4%ad-%e0%a4%b8%e0%a4%ae%e0%a5%8d%e0%a4%b0%e0%a4%be%e0%a4%9f-%e0%a4%aa%e0%a4%be%e0%a4%9f%e0%a5%80">सस्ताे र सुलभ सम्राट पाटी प्यालेस(फाेटाे सहित) </a> </h4>
+							</div>
+																				</div>
+		</div>
+	</section>
+	<section style="margin-top: 20px;">
+		<div class="this-content">
+			<div class="row">
+				<div class="col-md-4 sidebar">
+					<ul class="ulc">
+					
+					<div class="harpal-heading-header" style="margin-left: -39px;">
+							<h3> बजार </h3>
+						</div>
+																				<div class="harpal-archive-listing" style="    margin-left: -39px;">
+							<h3><a href="http://www.pmkhabar.com/business/%e0%a4%af%e0%a4%b8%e0%a4%b0%e0%a5%80-%e0%a4%95%e0%a4%b0-%e0%a4%9b%e0%a4%b2%e0%a5%80-%e0%a4%97%e0%a4%b0%e0%a5%8d%e0%a4%9b-%e0%a4%ac%e0%a5%88%e0%a4%b6%e0%a4%be%e0%a4%b2%e0%a5%80-%e0%a4%b9%e0%a5%8b">यसरी कर छली गर्छ, बैशाली होटल </a></h3>
+							<div class="harpal-archive-list-left"><a href="http://www.pmkhabar.com/business/%e0%a4%af%e0%a4%b8%e0%a4%b0%e0%a5%80-%e0%a4%95%e0%a4%b0-%e0%a4%9b%e0%a4%b2%e0%a5%80-%e0%a4%97%e0%a4%b0%e0%a5%8d%e0%a4%9b-%e0%a4%ac%e0%a5%88%e0%a4%b6%e0%a4%be%e0%a4%b2%e0%a5%80-%e0%a4%b9%e0%a5%8b"><img src="http://www.pmkhabar.com/wp-content/uploads/2017/09/morang_20100610082625-320x180-1.jpg" class="img-responsive pull-left wp-post-image" alt="यसरी कर छली गर्छ, बैशाली होटल" style="height: "></a></div>
+							<div class="harpal-archive-list-right">
+								<p class="short_content">काठमाडौं, पुस ९ – होटल बैशालीले लामो समयदेखि कर छल्ने...</p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+															<div class="harpal-archive-listing" style="    margin-left: -39px;">
+							<h3><a href="http://www.pmkhabar.com/business/%e0%a4%9a%e0%a4%be%e0%a4%b0-%e0%a4%a0%e0%a4%be%e0%a4%89%e0%a4%81%e0%a4%ae%e0%a4%be-%e0%a4%94%e0%a4%a6%e0%a5%8d%e0%a4%af%e0%a5%8b%e0%a4%97%e0%a4%bf%e0%a4%95-%e0%a4%95%e0%a4%b0%e0%a4%bf%e0%a4%a1">चार ठाउँमा औद्योगिक करिडोर स्थापना गर्न अध्ययन समिति गठन </a></h3>
+							<div class="harpal-archive-list-left"><a href="http://www.pmkhabar.com/business/%e0%a4%9a%e0%a4%be%e0%a4%b0-%e0%a4%a0%e0%a4%be%e0%a4%89%e0%a4%81%e0%a4%ae%e0%a4%be-%e0%a4%94%e0%a4%a6%e0%a5%8d%e0%a4%af%e0%a5%8b%e0%a4%97%e0%a4%bf%e0%a4%95-%e0%a4%95%e0%a4%b0%e0%a4%bf%e0%a4%a1"><img src="http://www.pmkhabar.com/wp-content/uploads/2017/09/morang_20100610082625-320x180.jpg" class="img-responsive pull-left wp-post-image" alt="चार ठाउँमा औद्योगिक करिडोर स्थापना गर्न अध्ययन समिति गठन" style="height: "></a></div>
+							<div class="harpal-archive-list-right">
+								<p class="short_content">काठमाडौं, पुस १३ – उद्योग मन्त्रालयले औद्योगिक करिडोर स्थापनाका लागि...</p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+															<div class="harpal-archive-listing" style="    margin-left: -39px;">
+							<h3><a href="http://www.pmkhabar.com/business/%e0%a4%85%e0%a4%b0%e0%a5%81%e0%a4%a3-%e0%a4%a4%e0%a5%87%e0%a4%b8%e0%a5%8d%e0%a4%b0%e0%a5%8b%e0%a4%ac%e0%a4%be%e0%a4%9f-%e0%a4%ad%e0%a5%8b%e0%a4%9c%e0%a4%aa%e0%a5%81%e0%a4%b0%e0%a4%b2%e0%a4%be%e0%a4%88">अरुण तेस्रोबाट भोजपुरलाई पनि राहत मिल्ने </a></h3>
+							<div class="harpal-archive-list-left"><a href="http://www.pmkhabar.com/business/%e0%a4%85%e0%a4%b0%e0%a5%81%e0%a4%a3-%e0%a4%a4%e0%a5%87%e0%a4%b8%e0%a5%8d%e0%a4%b0%e0%a5%8b%e0%a4%ac%e0%a4%be%e0%a4%9f-%e0%a4%ad%e0%a5%8b%e0%a4%9c%e0%a4%aa%e0%a5%81%e0%a4%b0%e0%a4%b2%e0%a4%be%e0%a4%88"><img src="http://www.pmkhabar.com/wp-content/uploads/2017/09/radhesh-panta-4-320x180.jpg" class="img-responsive pull-left wp-post-image" alt="अरुण तेस्रोबाट भोजपुरलाई पनि राहत मिल्ने" style="height: "></a></div>
+							<div class="harpal-archive-list-right">
+								<p class="short_content">भोजपुर, पुस ११– भोजपुरको सिमानामा पर्ने अरुण तेस्रो आयोजनाबाट प्रभावित...</p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+																						</ul>
+					<div class="clearfix"></div>
+				</div>
+				<div class="col-md-4 sidebar">
+					<ul class="ulc">
+					
+					<div class="harpal-heading-header" style="margin-left: -39px;">
+							<h3> पर्यटन </h3>
+						</div>
+																				<div class="harpal-archive-listing" style="    margin-left: -39px;">
+							<h3><a href="http://www.pmkhabar.com/business/%e0%a4%af%e0%a4%b8%e0%a4%b0%e0%a5%80-%e0%a4%95%e0%a4%b0-%e0%a4%9b%e0%a4%b2%e0%a5%80-%e0%a4%97%e0%a4%b0%e0%a5%8d%e0%a4%9b-%e0%a4%ac%e0%a5%88%e0%a4%b6%e0%a4%be%e0%a4%b2%e0%a5%80-%e0%a4%b9%e0%a5%8b">यसरी कर छली गर्छ, बैशाली होटल </a></h3>
+							<div class="harpal-archive-list-left"><a href="http://www.pmkhabar.com/business/%e0%a4%af%e0%a4%b8%e0%a4%b0%e0%a5%80-%e0%a4%95%e0%a4%b0-%e0%a4%9b%e0%a4%b2%e0%a5%80-%e0%a4%97%e0%a4%b0%e0%a5%8d%e0%a4%9b-%e0%a4%ac%e0%a5%88%e0%a4%b6%e0%a4%be%e0%a4%b2%e0%a5%80-%e0%a4%b9%e0%a5%8b"><img src="http://www.pmkhabar.com/wp-content/uploads/2017/09/morang_20100610082625-320x180-1.jpg" class="img-responsive pull-left wp-post-image" alt="यसरी कर छली गर्छ, बैशाली होटल" style="height: "></a></div>
+							<div class="harpal-archive-list-right">
+								<p class="short_content">काठमाडौं, पुस ९ – होटल बैशालीले लामो समयदेखि कर छल्ने...</p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+															<div class="harpal-archive-listing" style="    margin-left: -39px;">
+							<h3><a href="http://www.pmkhabar.com/business/%e0%a4%9a%e0%a4%be%e0%a4%b0-%e0%a4%a0%e0%a4%be%e0%a4%89%e0%a4%81%e0%a4%ae%e0%a4%be-%e0%a4%94%e0%a4%a6%e0%a5%8d%e0%a4%af%e0%a5%8b%e0%a4%97%e0%a4%bf%e0%a4%95-%e0%a4%95%e0%a4%b0%e0%a4%bf%e0%a4%a1">चार ठाउँमा औद्योगिक करिडोर स्थापना गर्न अध्ययन समिति गठन </a></h3>
+							<div class="harpal-archive-list-left"><a href="http://www.pmkhabar.com/business/%e0%a4%9a%e0%a4%be%e0%a4%b0-%e0%a4%a0%e0%a4%be%e0%a4%89%e0%a4%81%e0%a4%ae%e0%a4%be-%e0%a4%94%e0%a4%a6%e0%a5%8d%e0%a4%af%e0%a5%8b%e0%a4%97%e0%a4%bf%e0%a4%95-%e0%a4%95%e0%a4%b0%e0%a4%bf%e0%a4%a1"><img src="http://www.pmkhabar.com/wp-content/uploads/2017/09/morang_20100610082625-320x180.jpg" class="img-responsive pull-left wp-post-image" alt="चार ठाउँमा औद्योगिक करिडोर स्थापना गर्न अध्ययन समिति गठन" style="height: "></a></div>
+							<div class="harpal-archive-list-right">
+								<p class="short_content">काठमाडौं, पुस १३ – उद्योग मन्त्रालयले औद्योगिक करिडोर स्थापनाका लागि...</p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+															<div class="harpal-archive-listing" style="    margin-left: -39px;">
+							<h3><a href="http://www.pmkhabar.com/business/%e0%a4%85%e0%a4%b0%e0%a5%81%e0%a4%a3-%e0%a4%a4%e0%a5%87%e0%a4%b8%e0%a5%8d%e0%a4%b0%e0%a5%8b%e0%a4%ac%e0%a4%be%e0%a4%9f-%e0%a4%ad%e0%a5%8b%e0%a4%9c%e0%a4%aa%e0%a5%81%e0%a4%b0%e0%a4%b2%e0%a4%be%e0%a4%88">अरुण तेस्रोबाट भोजपुरलाई पनि राहत मिल्ने </a></h3>
+							<div class="harpal-archive-list-left"><a href="http://www.pmkhabar.com/business/%e0%a4%85%e0%a4%b0%e0%a5%81%e0%a4%a3-%e0%a4%a4%e0%a5%87%e0%a4%b8%e0%a5%8d%e0%a4%b0%e0%a5%8b%e0%a4%ac%e0%a4%be%e0%a4%9f-%e0%a4%ad%e0%a5%8b%e0%a4%9c%e0%a4%aa%e0%a5%81%e0%a4%b0%e0%a4%b2%e0%a4%be%e0%a4%88"><img src="http://www.pmkhabar.com/wp-content/uploads/2017/09/radhesh-panta-4-320x180.jpg" class="img-responsive pull-left wp-post-image" alt="अरुण तेस्रोबाट भोजपुरलाई पनि राहत मिल्ने" style="height: "></a></div>
+							<div class="harpal-archive-list-right">
+								<p class="short_content">भोजपुर, पुस ११– भोजपुरको सिमानामा पर्ने अरुण तेस्रो आयोजनाबाट प्रभावित...</p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+																						</ul>
+					<div class="clearfix"></div>
+				</div>
+				<div class="col-md-4 sidebar">
+					<ul class="ulc">
+					
+					<div class="harpal-heading-header" style="margin-left: -39px;">
+							<h3>अर्थ–वार्ता</h3>
+						</div>
+																				<div class="harpal-archive-listing" style="    margin-left: -39px;">
+							<h3><a href="http://www.pmkhabar.com/business/%e0%a4%af%e0%a4%b8%e0%a4%b0%e0%a5%80-%e0%a4%95%e0%a4%b0-%e0%a4%9b%e0%a4%b2%e0%a5%80-%e0%a4%97%e0%a4%b0%e0%a5%8d%e0%a4%9b-%e0%a4%ac%e0%a5%88%e0%a4%b6%e0%a4%be%e0%a4%b2%e0%a5%80-%e0%a4%b9%e0%a5%8b">यसरी कर छली गर्छ, बैशाली होटल </a></h3>
+							<div class="harpal-archive-list-left"><a href="http://www.pmkhabar.com/business/%e0%a4%af%e0%a4%b8%e0%a4%b0%e0%a5%80-%e0%a4%95%e0%a4%b0-%e0%a4%9b%e0%a4%b2%e0%a5%80-%e0%a4%97%e0%a4%b0%e0%a5%8d%e0%a4%9b-%e0%a4%ac%e0%a5%88%e0%a4%b6%e0%a4%be%e0%a4%b2%e0%a5%80-%e0%a4%b9%e0%a5%8b"><img src="http://www.pmkhabar.com/wp-content/uploads/2017/09/morang_20100610082625-320x180-1.jpg" class="img-responsive pull-left wp-post-image" alt="यसरी कर छली गर्छ, बैशाली होटल" style="height: "></a></div>
+							<div class="harpal-archive-list-right">
+								<p class="short_content">काठमाडौं, पुस ९ – होटल बैशालीले लामो समयदेखि कर छल्ने...</p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+															<div class="harpal-archive-listing" style="    margin-left: -39px;">
+							<h3><a href="http://www.pmkhabar.com/business/%e0%a4%9a%e0%a4%be%e0%a4%b0-%e0%a4%a0%e0%a4%be%e0%a4%89%e0%a4%81%e0%a4%ae%e0%a4%be-%e0%a4%94%e0%a4%a6%e0%a5%8d%e0%a4%af%e0%a5%8b%e0%a4%97%e0%a4%bf%e0%a4%95-%e0%a4%95%e0%a4%b0%e0%a4%bf%e0%a4%a1">चार ठाउँमा औद्योगिक करिडोर स्थापना गर्न अध्ययन समिति गठन </a></h3>
+							<div class="harpal-archive-list-left"><a href="http://www.pmkhabar.com/business/%e0%a4%9a%e0%a4%be%e0%a4%b0-%e0%a4%a0%e0%a4%be%e0%a4%89%e0%a4%81%e0%a4%ae%e0%a4%be-%e0%a4%94%e0%a4%a6%e0%a5%8d%e0%a4%af%e0%a5%8b%e0%a4%97%e0%a4%bf%e0%a4%95-%e0%a4%95%e0%a4%b0%e0%a4%bf%e0%a4%a1"><img src="http://www.pmkhabar.com/wp-content/uploads/2017/09/morang_20100610082625-320x180.jpg" class="img-responsive pull-left wp-post-image" alt="चार ठाउँमा औद्योगिक करिडोर स्थापना गर्न अध्ययन समिति गठन" style="height: "></a></div>
+							<div class="harpal-archive-list-right">
+								<p class="short_content">काठमाडौं, पुस १३ – उद्योग मन्त्रालयले औद्योगिक करिडोर स्थापनाका लागि...</p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+															<div class="harpal-archive-listing" style="    margin-left: -39px;">
+							<h3><a href="http://www.pmkhabar.com/business/%e0%a4%85%e0%a4%b0%e0%a5%81%e0%a4%a3-%e0%a4%a4%e0%a5%87%e0%a4%b8%e0%a5%8d%e0%a4%b0%e0%a5%8b%e0%a4%ac%e0%a4%be%e0%a4%9f-%e0%a4%ad%e0%a5%8b%e0%a4%9c%e0%a4%aa%e0%a5%81%e0%a4%b0%e0%a4%b2%e0%a4%be%e0%a4%88">अरुण तेस्रोबाट भोजपुरलाई पनि राहत मिल्ने </a></h3>
+							<div class="harpal-archive-list-left"><a href="http://www.pmkhabar.com/business/%e0%a4%85%e0%a4%b0%e0%a5%81%e0%a4%a3-%e0%a4%a4%e0%a5%87%e0%a4%b8%e0%a5%8d%e0%a4%b0%e0%a5%8b%e0%a4%ac%e0%a4%be%e0%a4%9f-%e0%a4%ad%e0%a5%8b%e0%a4%9c%e0%a4%aa%e0%a5%81%e0%a4%b0%e0%a4%b2%e0%a4%be%e0%a4%88"><img src="http://www.pmkhabar.com/wp-content/uploads/2017/09/radhesh-panta-4-320x180.jpg" class="img-responsive pull-left wp-post-image" alt="अरुण तेस्रोबाट भोजपुरलाई पनि राहत मिल्ने" style="height: "></a></div>
+							<div class="harpal-archive-list-right">
+								<p class="short_content">भोजपुर, पुस ११– भोजपुरको सिमानामा पर्ने अरुण तेस्रो आयोजनाबाट प्रभावित...</p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+																						</ul>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+</body>
+</html>

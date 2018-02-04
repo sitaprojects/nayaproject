@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>inner page</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<style>
+		/*main-list.css*/
+		img.ads {
+		width: 100%;
+		margin-top: 20px;
+		line-height: 10px;
+		}
+		.main-list img {
+		float: left;
+		margin-right: 10px;
+		margin-bottom: 10px;
+		}
+		.main-list h4 {
+		font-size: 18px;
+		font-weight: bold;
+		line-height: 1.3;
+		color: #337ab7;
+		}
+		.samachar-list {
+		border-bottom: 1px dashed #ccc;
+		}
+		.samachar-list:last-child {
+		border-bottom: none;
+		}
+		.samachar-list h5 {
+		font-size: 1.1em;
+		line-height: 1.4;
+		font-weight: bold;
+		color: #337ab7;
+		}
+		.content-writting-front {
+		font-size: 15px;
+		}
+		.main-list h5 i {
+		color: #ed1f24;
+		}
+		.cat-title {
+		padding: 10px;
+		background: #2f3d5d;
+		color: #fff;
+		border: solid #2f3d5d 1px;
+		}
+		.cat-title a {
+		background: url(images/flag.png) #2f3d5d no-repeat;
+		padding: 7.6px;
+		margin-left: -10px;
+		color: #fff;
+		font-size: 20px;
+		padding-left: 80px;
+		padding-right: 50px;
+		}
+		/*.samachar-list:hover {
+		color: #01944d;
+		-webkit-transition: 1s;
+		transition: 1s;
+		}*/
+		/*.main-list h4:hover {
+		color: #01944d;
+		-webkit-transition: 1s;
+		transition: 1s;
+		}*/
+		.main-list>a, .samachar-list>a:hover {
+		text-decoration: none !important;
+		}
+		/*.samachar-list h5:hover {
+		transition-duration: 1s;
+		color: #01944d;
+		}*/
+		/*reading-page.css*/
+		.this-content{
+		width: 90%;
+		padding:10px;
+		margin: 10px auto;
+		background-color: #f8f8f8;
+		}
+		.main-content{
+		padding-left: 15px;
+		}
+		.single-page-top-header h2{
+		font-size: 30px;
+		line-height: 1.2em;
+		padding-top: 15px;
+		color: #1a74bb;
+		font-weight: bold;
+		border-bottom: 1px solid #ccc;
+		padding-bottom: 10px;
+		}
+		/*.single-page-top-header h2:hover{
+		color: #01944d;
+		transition-duration: 0.8s;
+		}*/
+		.single-page-top-header{
+		font-weight: bold;
+		font-size: 15px;
+		}
+		.single-page-top-header span{
+		border-right: 1px solid #ccc;
+		padding: 7px 12px;
+		border-bottom: 1px solid #ccc;
+		}
+		.social-app ul li{
+		list-style: none;
+		float: left;
+		}
+		.caption a{
+		text-decoration: none;
+		}
+		.caption a p{
+		font-weight: bold;
+		font-size: 15px;
+		}
+		/*.caption a p:hover{
+		color: #ff3e44;
+		transition-duration: 0.8s;
+		}*/
+		.single-artical-cover p{
+		margin-top: 15px;
+		}
+		.single-page-down-header h4{
+		text-transform: uppercase;
+		color: #1a74bb;
+		font-size: 25px;
+		line-height: 18px;
+		float: left;
+		width: 100%;
+		font-weight: bold;
+		border-bottom: 1px solid #1a74bb;
+		}
+		.single-page-down-header h4 span{
+		float: left;
+		border-bottom: 3px solid #1a74bb;
+		padding: 0 0 15px 0;
+		margin: 0 0 -1px 0;
+		}
+		/*.harpal-archive h2 a:hover{
+		color: #01944d;
+		transition-duration: 0.8s;
+		}*/
+		/*alok css*/
+		.container{
+		width: 80%;
+		margin:0 auto;
+			}
+		.harpal-archive h2{
+		font-size: 22px;
+		font-weight: 700;
+		line-height: 1.3em;
+		padding: 0px 0;
+		}
+		.harpal-archive .entry-meta {
+		margin-bottom: 10px;
+		}
+		.col-md-8 .harpal-archive img {
+		margin-right: 15px;
+		margin-bottom: 15px;
+		width: 20%;
+		}
+		p{
+		margin: 0;
+		font-family: "Ek Mukta", sans-serif;
+		font-size: 15px;
+		}
+		.harpal-archive-listing h3{
+		font-weight: 700;
+		font-size: 18px;
+		padding-bottom: 10px;
+		}
+		.harpal-archive-list-right {
+		height: 62px;
+		overflow: hidden;
+		}
+		.harpal-archive-list-left a img {
+		width: 84px;
+		margin-right: 5px;
+		}
+		p.short_content {
+		line-height: 19px;
+		padding-top: 6px;
+		font-size: 15px;
+		}
+		a:hover{
+		text-decoration: none;
+		}
+		/*.harpal-archive-listing h3 a:hover{
+		color: #01944d;
+		transition-duration: 0.8s;
+		}*/
+		.harpal-sidebar-heading h4{
+		border-bottom: 3px solid #01944d;
+		padding: 10px 0;
+		font-weight: bold;
+		font-size: 18px;
+		}
+		@media(max-width: 768px){
+		.col-md-8 .harpal-archive img {
+		width: 100%;
+		}
+		}
+			/*header.css*/
+			.big-news{
+		background: transparent;
+		padding-top: 0px;
+		padding-bottom: 0px;}
+		.big-news h2 {
+		font-size: 30px;
+		line-height: 1.3;
+		border-left: 8px solid #01944d;
+		color: #337ab7;
+		font-weight: bold;
+		}
+		.big-news a:hover{
+		text-decoration: none;
+		}
+		/*.big-news h2:hover{
+		color: #01944d;
+				-webkit-transition: 1s;
+				transition: 1s;
+		}*/
+		.big-news img{
+		max-width: 80%;
+		}
+		.home-post-meta span {
+		background: #ed1f24;
+		padding: 5px;
+		border: solid 1px;
+		box-shadow: 0px 2px 2px #ddd;
+		color: #fff;
+		}
+		#myCarousel{
+		background: #FFF none repeat scroll 0% 0%;
+		box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+		}
+		.carousel-indicators {
+		bottom:-40px;
+		left:0;
+		display: none;
+		width:100%;
+		background:#ccc;
+		padding: 6px 0px;
+		margin-left:0;
+		border-top:2px solid #fff;
+		}
+		.carousel-indicators li {
+		width:12px;
+		height:12px;
+		background:#fff;
+		border-color:#fff;
+		
+		}
+		.carousel-indicators .active {
+		width:14px;
+		height:14px;
+		background:#428bca;
+		border-color:#428bca;
+		}
+		.carousel-inner .thumbnail {
+		margin-bottom:0;
+		border-bottom-left-radius:0;
+		border-bottom-right-radius:0;
+		}
+		.carousel-inner .caption {
+		background:#ddd;
+		padding: 10px;
+		}
+		.caption p{
+		margin: 0;
+		font-family: "Ek Mukta", sans-serif;
+		font-size: 15px;
+		font-weight: bold;
+		color: #337ab7;
+		line-height: 19.5px;
+		}
+		img.thumbnail{
+		width: 100%;
+		}
+		/*slider end*/
+		@media screen and (min-width: 260px){
+					.carousel-caption {
+				right: 0;
+				left: 0;
+				/*padding-bottom: 30px;*/
+					}
+				}
+				@media screen and (min-width: 768px){
+					.carousel-caption {
+					right: 0;
+					left: 0;
+					padding-bottom: 0;
+					}
+				}
+				.carousel-caption h3{
+					margin-left: 20px;
+				}
+		.harpal-heading-header{
+		display: block;
+		height: 35px;
+		background-color: #E9E9E9;
+		}
+		.harpal-heading-header h3{
+		background: #01944d!important;
+		line-height: 35px;
+		padding: 0 15px;
+		display: block;
+		float: left;
+		color: #FFF;
+		margin: 0;
+		font-size: 15px;
+		font-weight: bold;
+		}
+		@media(max-width: 768px) {
+		
+		.big-news img{
+		max-width: 100%;
+		height: auto;
+		}
+		}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="harpal-sub-menu hidden-xs">
+				<div class="navigation">
+					<nav class="navbar navbar-default archive-menu">
+						
+						<div class="col-md-12">
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+							</div>
+							<div id="navbar" class="navbar-collapse collapse">
+								
+								<ul id="menu-main-menu harpal-sub-list" class="nav nav-justified">
+									<li><a href="http://www.pmkhabar.com/manoranjan_category/gossip"> गसिप </a></li>
+									<li><a href="http://www.pmkhabar.com/manoranjan_category/threater"> थिएटर </a></li>
+									<li><a href="http://www.pmkhabar.com/manoranjan_category/feature"> फिचर </a></li>
+									<li><a href="http://www.pmkhabar.com/manoranjan_category/movie"> फिल्म </a></li>
+									<li><a href="http://www.pmkhabar.com/manoranjan_category/bollywoodhollywood"> बलिउड/हलिउड </a></li>
+									<li><a href="http://www.pmkhabar.com/manoranjan_category/model"> मोडेल </a></li>
+									<li><a href="http://www.pmkhabar.com/manoranjan_category/songs"> संगीत </a></li>
+									<li><a href="http://www.pmkhabar.com/manoranjan_category/manoranjan-news"> समाचार </a></li>
+									
+									<!-- <li><a href="#">समाचार</a></li>
+									<li><a href="#">विचार</a></li>
+									<li><a href="#">अन्तर्वार्ता</a></li>
+									<li><a href="#">अर्थ</a></li>
+									<li><a href="#">मनोरञ्जन</a></li>
+									<li><a href="#">अर्थ</a></li>
+									<li><a href="#">मनोरञ्जन</a></li> -->
+									
+								</ul>
+								
+							</div>
+							<div class="clearfix"></div>
+							
+						</div>
+					</nav>
+					<div class="clearfix"></div>
+					<!--/.navbar-collapse-->
+					<!--/.navbar-->
+				</div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		
+		<div class="this-content">
+			<div class="row">
+				<div class="col-md-8">
+					<div id="myCarousel" class="carousel slide" data-ride="carousel">
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner">
+							<div class="item active">
+								<a href="http://www.pmkhabar.com/manoranjan/%e0%a4%ae%e0%a4%a8%e0%a5%8d%e0%a4%a4%e0%a5%8d%e0%a4%b0%e0%a5%80%e0%a4%a6%e0%a5%87%e0%a4%96%e0%a4%bf-%e0%a4%b8%e0%a4%ad%e0%a4%be%e0%a4%b8%e0%a4%a6%e0%a5%8d%e0%a4%b9%e0%a4%b0%e0%a5%81%e0%a4%b2%e0%a5%87"><img src="http://www.pmkhabar.com/wp-content/uploads/2017/09/unnamed2-1-320x180.jpg" alt="मन्त्रीदेखि सभासद्हरुले गाउँदै भने ‘बनाऊ संबिधान" style="width:100%;"></a>
+								<div class="container">
+									<div class="carousel-caption" style="opacity: 0.8;background-color: #333333;bottom: 0;padding-top: 0;text-align: left;">
+										<h3>मन्त्रीदेखि सभासद्हरुले गाउँदै भने ‘बनाऊ संबिधान</h3>
+										<!-- <p>Hello world</p> -->
+									</div>
+								</div>
+							</div>
+							
+							<div class="item">
+								<a href="http://www.pmkhabar.com/manoranjan/%e0%a4%b8%e0%a4%bf%e0%a4%a6%e0%a5%8d%e0%a4%a7%e0%a4%be%e0%a4%b0%e0%a5%8d%e0%a4%a5%e0%a4%b2%e0%a5%87-%e0%a4%b8%e0%a5%8d%e0%a4%b5%e0%a4%bf%e0%a4%95%e0%a4%be%e0%a4%b0%e0%a5%87-%e0%a4%a6%e0%a4%bf%e0%a4%aa"><img src="http://www.pmkhabar.com/wp-content/uploads/2017/09/dipika-malya-320x180.jpg" alt="सिद्धार्थले स्विकारे दिपिका पादुकोणसँगको सम्बन्ध" style="width:100%;"></a>
+								<div class="container">
+									<div class="carousel-caption" style="opacity: 0.8;background-color: #333333;bottom: 0;padding-top: 0;text-align: left;">
+										<h3>सिद्धार्थले स्विकारे दिपिका पादुकोणसँगको सम्बन्ध</h3>
+										<!-- <p>Hello world</p> -->
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<a href="http://www.pmkhabar.com/manoranjan/%e0%a4%9c%e0%a4%be%e0%a4%a1%e0%a5%8b%e0%a4%ae%e0%a4%be-%e0%a4%95%e0%a5%8b%e0%a4%95%e0%a4%be-%e0%a4%95%e0%a5%8b%e0%a4%b2%e0%a4%be-%e0%a4%a8%e0%a5%87%e0%a4%aa%e0%a4%be%e0%a4%b2%e0%a5%80"><img src="http://www.pmkhabar.com/wp-content/uploads/2017/09/nepali-tara-3-1-320x180.jpg" alt="जाडोमा कोका–कोला नेपाली ताराले तताए बसन्तपुर" style="width:100%;"></a>
+								<div class="container">
+									<div class="carousel-caption" style="opacity: 0.8;background-color: #333333;bottom: 0;padding-top: 0;text-align: left;">
+										<h3>जाडोमा कोका–कोला नेपाली ताराले तताए बसन्तपुर</h3>
+										<!-- <p>Hello world</p> -->
+									</div>
+								</div>
+							</div>
+							
+						</div>
+						<!-- Left and right controls -->
+						<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="right carousel-control" href="#myCarousel" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right"></span>
+							<span class="sr-only">Next</span>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="news-tab">
+						<div class="card">
+							<ul class="nav nav-tabs" role="tablist">
+								<li role="presentation" class="active"><a href="#mukhya" aria-controls="profile" role="tab" data-toggle="tab">मुख्य</a></li>
+								<li role="presentation"><a href="#lokpriya" aria-controls="messages" role="tab" data-toggle="tab">लोकप्रिय</a></li>
+								<li role="presentation"><a href="#naya" aria-controls="settings" role="tab" data-toggle="tab">नयाँ</a></li>
+							</ul>
+							<!-- Tab panes -->
+							<div class="tab-content">
+								<div role="tabpanel" class="tab-pane active" id="mukhya">
+									<div id="catlist">
+										<dl>
+											<dt><img src="http://www.pmkhabar.com/wp-content/uploads/2017/09/unnamed2-1-320x180.jpg" width="93" height="62" /></dt>
+											<dd>
+											<p><a href="http://www.pmkhabar.com/manoranjan/%e0%a4%ae%e0%a4%a8%e0%a5%8d%e0%a4%a4%e0%a5%8d%e0%a4%b0%e0%a5%80%e0%a4%a6%e0%a5%87%e0%a4%96%e0%a4%bf-%e0%a4%b8%e0%a4%ad%e0%a4%be%e0%a4%b8%e0%a4%a6%e0%a5%8d%e0%a4%b9%e0%a4%b0%e0%a5%81%e0%a4%b2%e0%a5%87">मन्त्रीदेखि सभासद्हरुले गाउँदै भने ‘बनाऊ संबिधान</a></p>
+											</dd>
+										</dl>
+										<dl>
+											<dt><img src="http://www.pmkhabar.com/wp-content/uploads/2017/09/dipika-malya-320x180.jpg" width="93" height="62" /></dt>
+											<dd>
+											<p><a href="http://www.pmkhabar.com/manoranjan/%e0%a4%b8%e0%a4%bf%e0%a4%a6%e0%a5%8d%e0%a4%a7%e0%a4%be%e0%a4%b0%e0%a5%8d%e0%a4%a5%e0%a4%b2%e0%a5%87-%e0%a4%b8%e0%a5%8d%e0%a4%b5%e0%a4%bf%e0%a4%95%e0%a4%be%e0%a4%b0%e0%a5%87-%e0%a4%a6%e0%a4%bf%e0%a4%aa">सिद्धार्थले स्विकारे दिपिका पादुकोणसँगको सम्बन्ध</a></p>
+											</dd>
+										</dl>
+										<dl>
+											<dt><img src="http://www.pmkhabar.com/wp-content/uploads/2017/09/nepali-tara-3-1-320x180.jpg" width="93" height="62" /></dt>
+											<dd>
+											<p><a href="http://www.pmkhabar.com/manoranjan/%e0%a4%9c%e0%a4%be%e0%a4%a1%e0%a5%8b%e0%a4%ae%e0%a4%be-%e0%a4%95%e0%a5%8b%e0%a4%95%e0%a4%be-%e0%a4%95%e0%a5%8b%e0%a4%b2%e0%a4%be-%e0%a4%a8%e0%a5%87%e0%a4%aa%e0%a4%be%e0%a4%b2%e0%a5%80">जाडोमा कोका–कोला नेपाली ताराले तताए बसन्तपुर</a></p>
+											</dd>
+										</dl>
+										<dl>
+											<dt><img src="http://www.pmkhabar.com/wp-content/uploads/2017/09/hrithik-roshan-1-320x180.jpg" width="93" height="62" /></dt>
+											<dd>
+											<p><a href="http://www.pmkhabar.com/manoranjan/%e0%a4%8b%e0%a4%a4%e0%a4%bf%e0%a4%95-%e0%a4%b0%e0%a5%8b%e0%a4%b6%e0%a4%a8-%e0%a4%b8%e0%a4%be%e0%a4%87%e0%a4%ac%e0%a4%b0-%e0%a4%95%e0%a5%8d%e0%a4%b0%e0%a4%be%e0%a4%87%e0%a4%ae%e0%a4%95%e0%a4%be">ऋतिक रोशन साइबर क्राइमका शिकार</a></p>
+											</dd>
+										</dl>
+										<dl>
+											<dt><img src="http://www.pmkhabar.com/wp-content/uploads/2017/09/how-funny-10-320x180.jpg" width="93" height="62" /></dt>
+											<dd>
+											<p><a href="http://www.pmkhabar.com/manoranjan/%e0%a4%aa%e0%a5%8d%e0%a4%b0%e0%a4%bf%e0%a4%af%e0%a4%82%e0%a4%95%e0%a4%be-%e0%a4%b0-%e0%a4%95%e0%a5%87%e0%a4%95%e0%a5%80-%e0%a4%9c%e0%a4%be%e0%a4%b8%e0%a5%81%e0%a4%b8-%e0%a4%a6%e0%a4%af%e0%a4%be">प्रियंका र केकी जासुस, दयाहाङ बने प्रहरी</a></p>
+											</dd>
+										</dl>
+										<dl>
+											<dt><img src="http://www.pmkhabar.com/wp-content/uploads/2017/09/Salman-Khan-080713-320x180.jpg" width="93" height="62" /></dt>
+											<dd>
+											<p><a href="http://www.pmkhabar.com/manoranjan/%e0%a4%85%e0%a4%ac-%e0%a4%b8%e0%a4%b2%e0%a4%ae%e0%a4%be%e0%a4%a8%e0%a4%b2%e0%a5%87-%e0%a4%97%e0%a4%b0%e0%a5%8d%e0%a4%a8%e0%a5%87-%e0%a4%9b%e0%a5%88%e0%a4%a8%e0%a4%a8%e0%a5%8d-%e0%a4%ac%e0%a4%bf">अब सलमानले गर्ने छैनन् बिग बसको ‘होस्ट’</a></p>
+											</dd>
+										</dl>
+										<dl>
+											<dt><img src="http://www.pmkhabar.com/wp-content/uploads/2017/09/Sharad-320x180.jpg" width="93" height="62" /></dt>
+											<dd>
+											<p><a href="http://www.pmkhabar.com/manoranjan/%e0%a4%87%e0%a4%a8%e0%a5%8d%e0%a4%9c%e0%a4%bf%e0%a4%a8%e0%a4%bf%e0%a4%af%e0%a4%b0%e0%a4%bf%e0%a4%99-%e0%a4%9b%e0%a4%be%e0%a4%a1%e0%a5%87%e0%a4%b0-%e0%a4%ac%e0%a4%a8%e0%a5%87-%e0%a4%a8%e0%a5%87">इन्जिनियरिङ छाडेर बने नेपाली ‘गिटार गड’</a></p>
+											</dd>
+										</dl>
+									</div>
+								</div>
+								<div role="tabpanel" class="tab-pane" id="lokpriya">
+									<div id="catlist">
+										<dl>
+											<dt><img src="http://www.pmkhabar.com/wp-content/uploads/2017/09/dipika-malya-320x180.jpg" width="93" height="62" /></dt>
+											<dd>
+											<p><a href="http://www.pmkhabar.com/manoranjan/%e0%a4%b8%e0%a4%bf%e0%a4%a6%e0%a5%8d%e0%a4%a7%e0%a4%be%e0%a4%b0%e0%a5%8d%e0%a4%a5%e0%a4%b2%e0%a5%87-%e0%a4%b8%e0%a5%8d%e0%a4%b5%e0%a4%bf%e0%a4%95%e0%a4%be%e0%a4%b0%e0%a5%87-%e0%a4%a6%e0%a4%bf%e0%a4%aa">सिद्धार्थले स्विकारे दिपिका पादुकोणसँगको सम्बन्ध</a></p>
+											</dd>
+										</dl>
+										<dl>
+											<dt><img src="http://www.pmkhabar.com/wp-content/uploads/2017/09/unnamed2-1-320x180.jpg" width="93" height="62" /></dt>
+											<dd>
+											<p><a href="http://www.pmkhabar.com/manoranjan/%e0%a4%ae%e0%a4%a8%e0%a5%8d%e0%a4%a4%e0%a5%8d%e0%a4%b0%e0%a5%80%e0%a4%a6%e0%a5%87%e0%a4%96%e0%a4%bf-%e0%a4%b8%e0%a4%ad%e0%a4%be%e0%a4%b8%e0%a4%a6%e0%a5%8d%e0%a4%b9%e0%a4%b0%e0%a5%81%e0%a4%b2%e0%a5%87">मन्त्रीदेखि सभासद्हरुले गाउँदै भने ‘बनाऊ संबिधान</a></p>
+											</dd>
+										</dl>
+										<dl>
+											<dt><img src="http://www.pmkhabar.com/wp-content/uploads/2017/09/Salman-Khan-080713-320x180.jpg" width="93" height="62" /></dt>
+											<dd>
+											<p><a href="http://www.pmkhabar.com/manoranjan/%e0%a4%85%e0%a4%ac-%e0%a4%b8%e0%a4%b2%e0%a4%ae%e0%a4%be%e0%a4%a8%e0%a4%b2%e0%a5%87-%e0%a4%97%e0%a4%b0%e0%a5%8d%e0%a4%a8%e0%a5%87-%e0%a4%9b%e0%a5%88%e0%a4%a8%e0%a4%a8%e0%a5%8d-%e0%a4%ac%e0%a4%bf">अब सलमानले गर्ने छैनन् बिग बसको ‘होस्ट’</a></p>
+											</dd>
+										</dl>
+										<dl>
+											<dt><img src="http://www.pmkhabar.com/wp-content/uploads/2017/09/nepali-tara-3-1-320x180.jpg" width="93" height="62" /></dt>
+											<dd>
+											<p><a href="http://www.pmkhabar.com/manoranjan/%e0%a4%9c%e0%a4%be%e0%a4%a1%e0%a5%8b%e0%a4%ae%e0%a4%be-%e0%a4%95%e0%a5%8b%e0%a4%95%e0%a4%be-%e0%a4%95%e0%a5%8b%e0%a4%b2%e0%a4%be-%e0%a4%a8%e0%a5%87%e0%a4%aa%e0%a4%be%e0%a4%b2%e0%a5%80">जाडोमा कोका–कोला नेपाली ताराले तताए बसन्तपुर</a></p>
+											</dd>
+										</dl>
+										<dl>
+											<dt><img src="http://www.pmkhabar.com/wp-content/uploads/2017/09/Sharad-320x180.jpg" width="93" height="62" /></dt>
+											<dd>
+											<p><a href="http://www.pmkhabar.com/manoranjan/%e0%a4%87%e0%a4%a8%e0%a5%8d%e0%a4%9c%e0%a4%bf%e0%a4%a8%e0%a4%bf%e0%a4%af%e0%a4%b0%e0%a4%bf%e0%a4%99-%e0%a4%9b%e0%a4%be%e0%a4%a1%e0%a5%87%e0%a4%b0-%e0%a4%ac%e0%a4%a8%e0%a5%87-%e0%a4%a8%e0%a5%87">इन्जिनियरिङ छाडेर बने नेपाली ‘गिटार गड’</a></p>
+											</dd>
+										</dl>
+										<dl>
+											<dt><img src="http://www.pmkhabar.com/wp-content/uploads/2017/09/aishwarya1-320x180.jpg" width="93" height="62" /></dt>
+											<dd>
+											<p><a href="http://www.pmkhabar.com/manoranjan/%e0%a4%90%e0%a4%b6%e0%a5%8d%e0%a4%b5%e0%a4%b0%e0%a5%8d%e0%a4%af%e0%a4%be-%e0%a4%ac%e0%a5%8d%e0%a4%af%e0%a5%81%e0%a4%9f%e0%a5%80-%e0%a4%b5%e0%a4%bf%e0%a4%a5-%e0%a4%aa%e0%a4%b0%e0%a5%8d">ऐश्वर्या ‘ब्युटी विथ पर्पोस’ को सबैभन्दा सफल सुन्दरी घोषित</a></p>
+											</dd>
+										</dl>
+										<dl>
+											<dt><img src="http://www.pmkhabar.com/wp-content/uploads/2017/09/kapil-sharma-320x180.jpg" width="93" height="62" /></dt>
+											<dd>
+											<p><a href="http://www.pmkhabar.com/manoranjan/%e0%a4%95%e0%a4%aa%e0%a4%bf%e0%a4%b2-%e0%a4%b6%e0%a4%b0%e0%a5%8d%e0%a4%ae%e0%a4%be-%e0%a4%aa%e0%a4%b6%e0%a5%81%e0%a4%aa%e0%a4%a4%e0%a5%80%e0%a4%a8%e0%a4%be%e0%a4%a5%e0%a4%95%e0%a5%8b">कपिल शर्मा ‘पशुपतीनाथको दर्शन गर्न पाउँदा भाग्यमानी’</a></p>
+											</dd>
+										</dl>
+										<dl>
+											<dt><img src="http://www.pmkhabar.com/wp-content/uploads/2017/09/hrithik-roshan-1-320x180.jpg" width="93" height="62" /></dt>
+											<dd>
+											<p><a href="http://www.pmkhabar.com/manoranjan/%e0%a4%8b%e0%a4%a4%e0%a4%bf%e0%a4%95-%e0%a4%b0%e0%a5%8b%e0%a4%b6%e0%a4%a8-%e0%a4%b8%e0%a4%be%e0%a4%87%e0%a4%ac%e0%a4%b0-%e0%a4%95%e0%a5%8d%e0%a4%b0%e0%a4%be%e0%a4%87%e0%a4%ae%e0%a4%95%e0%a4%be">ऋतिक रोशन साइबर क्राइमका शिकार</a></p>
+											</dd>
+										</dl>
+										
+									</div>
+								</div>
+								<div role="tabpanel" class="tab-pane" id="naya">
+									<ul class="news-list">
+										
+										<li><a href="http://www.pmkhabar.com/manoranjan/%e0%a4%ae%e0%a4%a8%e0%a5%8d%e0%a4%a4%e0%a5%8d%e0%a4%b0%e0%a5%80%e0%a4%a6%e0%a5%87%e0%a4%96%e0%a4%bf-%e0%a4%b8%e0%a4%ad%e0%a4%be%e0%a4%b8%e0%a4%a6%e0%a5%8d%e0%a4%b9%e0%a4%b0%e0%a5%81%e0%a4%b2%e0%a5%87">
+										मन्त्रीदेखि सभासद्हरुले गाउँदै भने ‘बनाऊ संबिधान								</a></li>
+										
+										<li><a href="http://www.pmkhabar.com/manoranjan/%e0%a4%b8%e0%a4%bf%e0%a4%a6%e0%a5%8d%e0%a4%a7%e0%a4%be%e0%a4%b0%e0%a5%8d%e0%a4%a5%e0%a4%b2%e0%a5%87-%e0%a4%b8%e0%a5%8d%e0%a4%b5%e0%a4%bf%e0%a4%95%e0%a4%be%e0%a4%b0%e0%a5%87-%e0%a4%a6%e0%a4%bf%e0%a4%aa">
+										सिद्धार्थले स्विकारे दिपिका पादुकोणसँगको सम्बन्ध								</a></li>
+										
+										<li><a href="http://www.pmkhabar.com/manoranjan/%e0%a4%9c%e0%a4%be%e0%a4%a1%e0%a5%8b%e0%a4%ae%e0%a4%be-%e0%a4%95%e0%a5%8b%e0%a4%95%e0%a4%be-%e0%a4%95%e0%a5%8b%e0%a4%b2%e0%a4%be-%e0%a4%a8%e0%a5%87%e0%a4%aa%e0%a4%be%e0%a4%b2%e0%a5%80">
+										जाडोमा कोका–कोला नेपाली ताराले तताए बसन्तपुर								</a></li>
+										
+										<li><a href="http://www.pmkhabar.com/manoranjan/%e0%a4%8b%e0%a4%a4%e0%a4%bf%e0%a4%95-%e0%a4%b0%e0%a5%8b%e0%a4%b6%e0%a4%a8-%e0%a4%b8%e0%a4%be%e0%a4%87%e0%a4%ac%e0%a4%b0-%e0%a4%95%e0%a5%8d%e0%a4%b0%e0%a4%be%e0%a4%87%e0%a4%ae%e0%a4%95%e0%a4%be">
+										ऋतिक रोशन साइबर क्राइमका शिकार								</a></li>
+										
+										<li><a href="http://www.pmkhabar.com/manoranjan/%e0%a4%aa%e0%a5%8d%e0%a4%b0%e0%a4%bf%e0%a4%af%e0%a4%82%e0%a4%95%e0%a4%be-%e0%a4%b0-%e0%a4%95%e0%a5%87%e0%a4%95%e0%a5%80-%e0%a4%9c%e0%a4%be%e0%a4%b8%e0%a5%81%e0%a4%b8-%e0%a4%a6%e0%a4%af%e0%a4%be">
+										प्रियंका र केकी जासुस, दयाहाङ बने प्रहरी								</a></li>
+										
+										<li><a href="http://www.pmkhabar.com/manoranjan/%e0%a4%85%e0%a4%ac-%e0%a4%b8%e0%a4%b2%e0%a4%ae%e0%a4%be%e0%a4%a8%e0%a4%b2%e0%a5%87-%e0%a4%97%e0%a4%b0%e0%a5%8d%e0%a4%a8%e0%a5%87-%e0%a4%9b%e0%a5%88%e0%a4%a8%e0%a4%a8%e0%a5%8d-%e0%a4%ac%e0%a4%bf">
+										अब सलमानले गर्ने छैनन् बिग बसको ‘होस्ट’								</a></li>
+										
+										<li><a href="http://www.pmkhabar.com/manoranjan/%e0%a4%87%e0%a4%a8%e0%a5%8d%e0%a4%9c%e0%a4%bf%e0%a4%a8%e0%a4%bf%e0%a4%af%e0%a4%b0%e0%a4%bf%e0%a4%99-%e0%a4%9b%e0%a4%be%e0%a4%a1%e0%a5%87%e0%a4%b0-%e0%a4%ac%e0%a4%a8%e0%a5%87-%e0%a4%a8%e0%a5%87">
+										इन्जिनियरिङ छाडेर बने नेपाली ‘गिटार गड’								</a></li>
+										
+										<li><a href="http://www.pmkhabar.com/manoranjan/%e0%a4%90%e0%a4%b6%e0%a5%8d%e0%a4%b5%e0%a4%b0%e0%a5%8d%e0%a4%af%e0%a4%be-%e0%a4%ac%e0%a5%8d%e0%a4%af%e0%a5%81%e0%a4%9f%e0%a5%80-%e0%a4%b5%e0%a4%bf%e0%a4%a5-%e0%a4%aa%e0%a4%b0%e0%a5%8d">
+										ऐश्वर्या ‘ब्युटी विथ पर्पोस’ को सबैभन्दा सफल सुन्दरी घोषित								</a></li>
+										
+										<li><a href="http://www.pmkhabar.com/manoranjan/%e0%a4%a6%e0%a4%95%e0%a5%8d%e0%a4%b7%e0%a4%bf%e0%a4%a3-%e0%a4%85%e0%a4%ab%e0%a5%8d%e0%a4%b0%e0%a4%bf%e0%a4%95%e0%a5%80-%e0%a4%b8%e0%a5%81%e0%a4%a8%e0%a5%8d%e0%a4%a6%e0%a4%b0%e0%a5%80-%e0%a4%b0">
+										दक्षिण अफ्रिकी सुन्दरी रोलेन मिस वल्र्ड घोषित								</a></li>
+										
+										<li><a href="http://www.pmkhabar.com/manoranjan/%e0%a4%95%e0%a4%aa%e0%a4%bf%e0%a4%b2-%e0%a4%b6%e0%a4%b0%e0%a5%8d%e0%a4%ae%e0%a4%be-%e0%a4%aa%e0%a4%b6%e0%a5%81%e0%a4%aa%e0%a4%a4%e0%a5%80%e0%a4%a8%e0%a4%be%e0%a4%a5%e0%a4%95%e0%a5%8b">
+										कपिल शर्मा ‘पशुपतीनाथको दर्शन गर्न पाउँदा भाग्यमानी’								</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- owl-nav -->
+		<section style="margin-top: 20px;">
+			<div class="this-content">
+				<div class="row">
+					<div class="col-md-4 sidebar">
+						<ul class="ulc">
+							
+							<div class="harpal-heading-header" style="margin-left: -39px;">
+								<h3>गसिप</h3>
+							</div>
+							<div class="harpal-archive-listing" style="    margin-left: -39px;">
+								<h3><a href="http://www.pmkhabar.com/manoranjan/%e0%a4%b8%e0%a4%bf%e0%a4%a6%e0%a5%8d%e0%a4%a7%e0%a4%be%e0%a4%b0%e0%a5%8d%e0%a4%a5%e0%a4%b2%e0%a5%87-%e0%a4%b8%e0%a5%8d%e0%a4%b5%e0%a4%bf%e0%a4%95%e0%a4%be%e0%a4%b0%e0%a5%87-%e0%a4%a6%e0%a4%bf%e0%a4%aa">सिद्धार्थले स्विकारे दिपिका पादुकोणसँगको सम्बन्ध </a></h3>
+								<div class="harpal-archive-list-left"><a href="http://www.pmkhabar.com/manoranjan/%e0%a4%b8%e0%a4%bf%e0%a4%a6%e0%a5%8d%e0%a4%a7%e0%a4%be%e0%a4%b0%e0%a5%8d%e0%a4%a5%e0%a4%b2%e0%a5%87-%e0%a4%b8%e0%a5%8d%e0%a4%b5%e0%a4%bf%e0%a4%95%e0%a4%be%e0%a4%b0%e0%a5%87-%e0%a4%a6%e0%a4%bf%e0%a4%aa"><img src="http://www.pmkhabar.com/wp-content/uploads/2017/09/dipika-malya-320x180.jpg" class="img-responsive pull-left wp-post-image" alt="सिद्धार्थले स्विकारे दिपिका पादुकोणसँगको सम्बन्ध" style="height: "></a></div>
+								<div class="harpal-archive-list-right">
+									<p class="short_content">सिद्धार्थ माल्याले बलिउडकी नायिका दिपिका पादुकोणसँगको आफ्नो सम्बन्धको कुरा सबैको...</p>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="harpal-archive-listing" style="    margin-left: -39px;">
+								<h3><a href="http://www.pmkhabar.com/manoranjan/%e0%a4%85%e0%a4%ac-%e0%a4%b8%e0%a4%b2%e0%a4%ae%e0%a4%be%e0%a4%a8%e0%a4%b2%e0%a5%87-%e0%a4%97%e0%a4%b0%e0%a5%8d%e0%a4%a8%e0%a5%87-%e0%a4%9b%e0%a5%88%e0%a4%a8%e0%a4%a8%e0%a5%8d-%e0%a4%ac%e0%a4%bf">अब सलमानले गर्ने छैनन् बिग बसको ‘होस्ट’ </a></h3>
+								<div class="harpal-archive-list-left"><a href="http://www.pmkhabar.com/manoranjan/%e0%a4%85%e0%a4%ac-%e0%a4%b8%e0%a4%b2%e0%a4%ae%e0%a4%be%e0%a4%a8%e0%a4%b2%e0%a5%87-%e0%a4%97%e0%a4%b0%e0%a5%8d%e0%a4%a8%e0%a5%87-%e0%a4%9b%e0%a5%88%e0%a4%a8%e0%a4%a8%e0%a5%8d-%e0%a4%ac%e0%a4%bf"><img src="http://www.pmkhabar.com/wp-content/uploads/2017/09/Salman-Khan-080713-320x180.jpg" class="img-responsive pull-left wp-post-image" alt="अब सलमानले गर्ने छैनन् बिग बसको ‘होस्ट’" style="height: "></a></div>
+								<div class="harpal-archive-list-right">
+									<p class="short_content">नयाँ दिल्ली – टिभीको सबैभन्दा विवादास्पद रियालिटी सो ‘बिग बस’...</p>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="harpal-archive-listing" style="    margin-left: -39px;">
+								<h3><a href="http://www.pmkhabar.com/manoranjan/%e0%a4%a6%e0%a4%95%e0%a5%8d%e0%a4%b7%e0%a4%bf%e0%a4%a3-%e0%a4%85%e0%a4%ab%e0%a5%8d%e0%a4%b0%e0%a4%bf%e0%a4%95%e0%a5%80-%e0%a4%b8%e0%a5%81%e0%a4%a8%e0%a5%8d%e0%a4%a6%e0%a4%b0%e0%a5%80-%e0%a4%b0">दक्षिण अफ्रिकी सुन्दरी रोलेन मिस वल्र्ड घोषित </a></h3>
+								<div class="harpal-archive-list-left"><a href="http://www.pmkhabar.com/manoranjan/%e0%a4%a6%e0%a4%95%e0%a5%8d%e0%a4%b7%e0%a4%bf%e0%a4%a3-%e0%a4%85%e0%a4%ab%e0%a5%8d%e0%a4%b0%e0%a4%bf%e0%a4%95%e0%a5%80-%e0%a4%b8%e0%a5%81%e0%a4%a8%e0%a5%8d%e0%a4%a6%e0%a4%b0%e0%a5%80-%e0%a4%b0"><img src="http://www.pmkhabar.com/wp-content/uploads/2017/09/8217c74104ce3931680f6a706700f5bf_t730-320x180.jpeg" class="img-responsive pull-left wp-post-image" alt="दक्षिण अफ्रिकी सुन्दरी रोलेन मिस वल्र्ड घोषित" style="height: "></a></div>
+								<div class="harpal-archive-list-right">
+									<p class="short_content">लण्डन, मंसिर २८ – दक्षिण अफ्रिकी सुन्दरी रोलेन स्ट्राउस यस...</p>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</ul>
+						<div class="clearfix"></div>
+					</div>
+					<div class="col-md-4 sidebar">
+						<ul class="ulc">
+							
+							<div class="harpal-heading-header" style="margin-left: -39px;">
+								<h3>फिल्म</h3>
+							</div>
+							<div class="harpal-archive-listing" style="    margin-left: -39px;">
+								<h3><a href="http://www.pmkhabar.com/manoranjan/%e0%a4%ae%e0%a4%a8%e0%a5%8d%e0%a4%a4%e0%a5%8d%e0%a4%b0%e0%a5%80%e0%a4%a6%e0%a5%87%e0%a4%96%e0%a4%bf-%e0%a4%b8%e0%a4%ad%e0%a4%be%e0%a4%b8%e0%a4%a6%e0%a5%8d%e0%a4%b9%e0%a4%b0%e0%a5%81%e0%a4%b2%e0%a5%87">मन्त्रीदेखि सभासद्हरुले गाउँदै भने ‘बनाऊ संबिधान </a></h3>
+								<div class="harpal-archive-list-left"><a href="http://www.pmkhabar.com/manoranjan/%e0%a4%ae%e0%a4%a8%e0%a5%8d%e0%a4%a4%e0%a5%8d%e0%a4%b0%e0%a5%80%e0%a4%a6%e0%a5%87%e0%a4%96%e0%a4%bf-%e0%a4%b8%e0%a4%ad%e0%a4%be%e0%a4%b8%e0%a4%a6%e0%a5%8d%e0%a4%b9%e0%a4%b0%e0%a5%81%e0%a4%b2%e0%a5%87"><img src="http://www.pmkhabar.com/wp-content/uploads/2017/09/unnamed2-1-320x180.jpg" class="img-responsive pull-left wp-post-image" alt="मन्त्रीदेखि सभासद्हरुले गाउँदै भने ‘बनाऊ संबिधान" style="height: "></a></div>
+								<div class="harpal-archive-list-right">
+									<p class="short_content">काठमाडौं, पुस ११ – नेपाली सांगीतिक ईतिहासमा पहिलोपल्ट बहालवाला मन्त्रीदेखि,...</p>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="harpal-archive-listing" style="    margin-left: -39px;">
+								<h3><a href="http://www.pmkhabar.com/manoranjan/%e0%a4%b8%e0%a4%bf%e0%a4%a6%e0%a5%8d%e0%a4%a7%e0%a4%be%e0%a4%b0%e0%a5%8d%e0%a4%a5%e0%a4%b2%e0%a5%87-%e0%a4%b8%e0%a5%8d%e0%a4%b5%e0%a4%bf%e0%a4%95%e0%a4%be%e0%a4%b0%e0%a5%87-%e0%a4%a6%e0%a4%bf%e0%a4%aa">सिद्धार्थले स्विकारे दिपिका पादुकोणसँगको सम्बन्ध </a></h3>
+								<div class="harpal-archive-list-left"><a href="http://www.pmkhabar.com/manoranjan/%e0%a4%b8%e0%a4%bf%e0%a4%a6%e0%a5%8d%e0%a4%a7%e0%a4%be%e0%a4%b0%e0%a5%8d%e0%a4%a5%e0%a4%b2%e0%a5%87-%e0%a4%b8%e0%a5%8d%e0%a4%b5%e0%a4%bf%e0%a4%95%e0%a4%be%e0%a4%b0%e0%a5%87-%e0%a4%a6%e0%a4%bf%e0%a4%aa"><img src="http://www.pmkhabar.com/wp-content/uploads/2017/09/dipika-malya-320x180.jpg" class="img-responsive pull-left wp-post-image" alt="सिद्धार्थले स्विकारे दिपिका पादुकोणसँगको सम्बन्ध" style="height: "></a></div>
+								<div class="harpal-archive-list-right">
+									<p class="short_content">सिद्धार्थ माल्याले बलिउडकी नायिका दिपिका पादुकोणसँगको आफ्नो सम्बन्धको कुरा सबैको...</p>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="harpal-archive-listing" style="    margin-left: -39px;">
+								<h3><a href="http://www.pmkhabar.com/manoranjan/%e0%a4%9c%e0%a4%be%e0%a4%a1%e0%a5%8b%e0%a4%ae%e0%a4%be-%e0%a4%95%e0%a5%8b%e0%a4%95%e0%a4%be-%e0%a4%95%e0%a5%8b%e0%a4%b2%e0%a4%be-%e0%a4%a8%e0%a5%87%e0%a4%aa%e0%a4%be%e0%a4%b2%e0%a5%80">जाडोमा कोका–कोला नेपाली ताराले तताए बसन्तपुर </a></h3>
+								<div class="harpal-archive-list-left"><a href="http://www.pmkhabar.com/manoranjan/%e0%a4%9c%e0%a4%be%e0%a4%a1%e0%a5%8b%e0%a4%ae%e0%a4%be-%e0%a4%95%e0%a5%8b%e0%a4%95%e0%a4%be-%e0%a4%95%e0%a5%8b%e0%a4%b2%e0%a4%be-%e0%a4%a8%e0%a5%87%e0%a4%aa%e0%a4%be%e0%a4%b2%e0%a5%80"><img src="http://www.pmkhabar.com/wp-content/uploads/2017/09/nepali-tara-3-1-320x180.jpg" class="img-responsive pull-left wp-post-image" alt="जाडोमा कोका–कोला नेपाली ताराले तताए बसन्तपुर" style="height: "></a></div>
+								<div class="harpal-archive-list-right">
+									<p class="short_content">काठमाडौँ, पुस ५ – नेपालको सांगीतिक रियालिटी शो कोका–कोला नेपाली...</p>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</ul>
+						<div class="clearfix"></div>
+					</div>
+					<div class="col-md-4 sidebar">
+						<div class="ads">
+							<img src="http://www.pmkhabar.com/wp-content/uploads/2017/09/electricity.gif" class="ads">
+						</div>
+						<div class="ads">
+							<img src="http://www.pmkhabar.com/wp-content/uploads/2017/09/nepal-telecom-may17.gif" class="ads">
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!-- owl nav -->
+		<div class="clearfix"></div>
+</body>
+</html>
